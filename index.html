@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>DATA 210 Spring 2016 by Anderson-Lab</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>DATA 210 Spring 2016</h1>
+        <p>Dataset Organization and Management</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Anderson-Lab/data-210-spring-2016" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/Anderson-Lab/data-210-spring-2016/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/Anderson-Lab/data-210-spring-2016/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="syllabus" class="anchor" href="#syllabus" aria-hidden="true"><span class="octicon octicon-link"></span></a>Syllabus</h1>
+
+<h3>
+<a id="course-description" class="anchor" href="#course-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Course Description</h3>
+
+<p>A course to introduce the structure of databases and the management of datasets for information extraction. Concepts include the relational and entity relationship models, and local and distributed storage and access. The preparation and management of datasets for analysis is covered, and includes data cleaning, reorganization and security.</p>
+
+<h3>
+<a id="required-text" class="anchor" href="#required-text" aria-hidden="true"><span class="octicon octicon-link"></span></a>Required Text</h3>
+
+<ul>
+<li>Data Science at the Command Line: Facing the Future with Time-Tested Tools by Jeroen Janssens. <a href="http://www.amazon.com/Data-Science-Command-Line-Time-Tested-ebook/dp/B00NX1L9V2/ref=mt_kindle?_encoding=UTF8&amp;me=">Link</a>
+</li>
+<li>Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement by Eric Redmond and Jim Wilson. <a href="http://www.amazon.com/Seven-Databases-Weeks-Modern-Movement/dp/1934356921/ref=sr_1_4?ie=UTF8&amp;qid=1451680015&amp;sr=8-4&amp;keywords=nosql">Link</a>
+</li>
+</ul>
+
+<h3>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h3>
+
+<p>None</p>
+
+<h2>
+<a id="contact-information" class="anchor" href="#contact-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact Information</h2>
+
+<p>Professor: Dr. Paul Anderson<br>
+Office: 313 Harbor Walk East<br>
+Office Hours: Tuesday and Thursday from 10 - 11:20. AM<br>
+Office Hour Policy: My door is always open. Even if it isn't because of hallway noise, please knock. I love to hear from students. If you would like an appointment, please e-mail me.<br>
+E-mail: <a href="mailto:andersonpe2@cofc.edu">andersonpe2@cofc.edu</a><br>
+Phone: 843-953-8151</p>
+
+<h2>
+<a id="learning-outcomes" class="anchor" href="#learning-outcomes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learning Outcomes</h2>
+
+<ol>
+<li>To understand the difference between the different types of data (structured, semi-structured, unstructured, and metadata) and how this impacts underlying storage mechanisms.</li>
+<li>To understand the key differences between data management systems, such as relational database systems, key-value, document-oriented, big data driven alternatives (e.g., NoSQL), etc.</li>
+<li>Be able to select and implement the optimal data management system and associated workflow as a function of the data's volume, velocity, variety, veracity, and veracity.</li>
+<li>To understand basic cloud computing concepts, to include infrastructure as a service, platform as a service, software as a service, and managed service.</li>
+<li>To understand the fundamental organization and use of semi-structured data, such as XML/XSD and XML processing via XQuery/XPath.</li>
+<li>To construct and perform queries to select data for assembly into an analysis workflow for data science.</li>
+<li>To understand the need for and to use an available tool to carry out data cleaning and other data pre-processing activities in preparing data resources integrated from various sources.</li>
+<li>To understand common patterns of data flow through data science analysis workflows, such as big data processing patterns using a parallel processing paradigms such as map-reduce.</li>
+</ol>
+
+<h2>
+<a id="grading-policy" class="anchor" href="#grading-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grading Policy</h2>
+
+<p>Exams - 70%<br>
+Homework and Worksheets - 30%<br></p>
+
+<h2>
+<a id="grading-scale" class="anchor" href="#grading-scale" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grading Scale</h2>
+
+<p>A: 90-100; B: 80-89; C: 70-79; D: 65-69; F: &lt;65. Plusses and minuses will be used at the
+discretion of the instructor.</p>
+
+<h3>
+<a id="grading-guidelines" class="anchor" href="#grading-guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Grading Guidelines</h3>
+
+<p>Submitted work requires Analysis, Evaluation, and Creation of ideas, concepts, and
+materials into various deliverables (e.g., see revised Bloom's Taxonomy
+(<a href="http://www.nwlink.com/%7Edonclark/hrd/bloom.html">http://www.nwlink.com/~donclark/hrd/bloom.html</a>) and reference below).</p>
+
+<p>The grade of A is for work that involves high-quality achievement in all three Bloom areas.<br>
+The grade of B is for work that involves high-quality achievement in at least two Bloom areas, and mediumlevel
+achievement in the other.<br>
+The grade of C is for work that involves high-quality achievement in at least one Bloom area, and mediumlevel
+achievement in the others.<br>
+The grade of F is for work that does not meet above criteria.</p>
+
+<p>Reference: Errol Thompson, Andrew Luxton-Reilly, Jacqueline L. Whalley, Minjie Hu, and Phil Robbins. 2008.
+Bloom's taxonomy for CS assessment. In Proceedings of the tenth conference on Australasian computing education</p>
+
+<ul>
+<li>Volume 78 (ACE '08), Simon Hamilton and Margaret Hamilton (Eds.), Vol. 78. Australian Computer Society,
+Inc., Darlinghurst, Australia, Australia, 155-161.</li>
+</ul>
+
+<h3>
+<a id="exam-policy" class="anchor" href="#exam-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exam Policy</h3>
+
+<p>Student performance will be accessed through weekly exams. Each exam will cover the material from the previous week. They will last no more than 15 minutes. No makeup exams will be allowed. Your lowest exam grade will be dropped.</p>
+
+<h3>
+<a id="worksheet-and-homework-policy" class="anchor" href="#worksheet-and-homework-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Worksheet and Homework Policy</h3>
+
+<p>Worksheets/homework will be assigned each week and collected each Thursday before the weekly exam. Homework will be graded pass or fail and are designed to help you study for the exams. For the majority of the classes, the worksheets will double as assigned homework for you to turn in before the following exam.</p>
+
+<h3>
+<a id="honor-code" class="anchor" href="#honor-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Honor Code</h3>
+
+<p>You must do your work alone (or with your teammates, for group assignments).<br>
+You must identify your sources of material and inspiration. It is a violation of the honor code to present
+someone else's work or ideas as your own.<br>
+In any course deliverable, you must always identify the person(s) that helped you (directly or indirectly), if
+any, and explain their contribution to your work.<br>
+Also see the College of Charleston Student Handbook, especially sections on The Honor Code (p. 11), and
+Student Code of Conduct (p. 12). There is other useful information there.</p>
+
+<h3>
+<a id="classroom-policies" class="anchor" href="#classroom-policies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Classroom Policies</h3>
+
+<ul>
+<li>Tuesday will be devoted to introducing new material. It has been shown in numerous studies that even having a laptop open during this type of instruction negatively affects not only your learning but those around you. Because of this, we will have a strict no
+laptop policy open on the desk on Tuesday. I will do my best to record all lectures and post them in a timely fashion.<br>
+</li>
+<li>You are expected to take good notes during class.</li>
+<li>You are expected to participate in class with questions and invited discussion.</li>
+<li>You are expected to attend all classes. The grade 'WA' will be given for excessive (&gt;= 3) absences. If you
+miss class, you must get an absence memo from the Associate Dean of Students Office
+(<a href="http://studentaffairs.cofc.edu/general_info/absence/">http://studentaffairs.cofc.edu/general_info/absence/</a>) ; also, you are responsible for announcements made in
+class, assignment due dates, etc.</li>
+<li>In summary, you should contribute positively to the classroom learning experience, and respect your
+classmates right to learn (see College of Charleston Student Handbook (<a href="http://studentaffairs.cofc.edu/honorsystem/">http://studentaffairs.cofc.edu/honorsystem/</a>
+studenthandbook/index.php) , section on Classroom Code of Conduct (p. 58)).</li>
+</ul>
+
+<h3>
+<a id="late-policy" class="anchor" href="#late-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Late Policy</h3>
+
+<p>No late days will be allowed without an excuse. This course is an upper level course, and it will move very fast.
+Falling behind on assignments will make it difficult to achieve the learning outcomes of this course.</p>
+
+<h3>
+<a id="final-exam" class="anchor" href="#final-exam" aria-hidden="true"><span class="octicon octicon-link"></span></a>Final Exam</h3>
+
+<p>April 28th from 8 - 11 AM. This time will be used for final project presentations.</p>
+
+<h2>
+<a id="facebook-group" class="anchor" href="#facebook-group" aria-hidden="true"><span class="octicon octicon-link"></span></a>Facebook Group</h2>
+
+<p>Everyone must join the Facebook group for class discussions: 
+<a href="https://www.facebook.com/groups/466621090194047/"></a><a href="https://www.facebook.com/groups/466621090194047/">https://www.facebook.com/groups/466621090194047/</a></p>
+
+<h1>
+<a id="schedule" class="anchor" href="#schedule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Schedule</h1>
+
+<p>You are responsible for coming prepared to class. This includes reading through the material before attending class.
+You will get a lot more out of the lectures and discussions in this manner. It is cliche, but true. Each week will follow a similar pattern. On Tuesday new material will be introduced and discussed. Thursday will start with an exam over the previous week's material. Followed by an interactive exercise. This will sometimes be guided. sometimes in groups, and sometimes individually. The schedule below is tentative and subject to change. You must check it regularly. </p>
+
+<h2>
+<a id="week-1" class="anchor" href="#week-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 1</h2>
+
+<h3>
+<a id="tuesday" class="anchor" href="#tuesday" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<p>No class</p>
+
+<h3>
+<a id="thursday" class="anchor" href="#thursday" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Introduction to course and syllabus</li>
+<li>Introduction to Data Science (if time)</li>
+</ul>
+
+<h2>
+<a id="week-2" class="anchor" href="#week-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 2</h2>
+
+<h3>
+<a id="tuesday-1" class="anchor" href="#tuesday-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Introduction to Data Science at Command Line (Command Line Chapter 1 abbreviated from here on as CL 1)</li>
+<li>Getting Started (CL 2)</li>
+</ul>
+
+<h3>
+<a id="thursday-1" class="anchor" href="#thursday-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over syllabus</li>
+<li>Getting Started yourself (bring laptops) and worksheet</li>
+</ul>
+
+<h2>
+<a id="week-3" class="anchor" href="#week-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 3</h2>
+
+<h3>
+<a id="tuesday-2" class="anchor" href="#tuesday-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Obtaining Data (CL 3)</li>
+</ul>
+
+<h3>
+<a id="thursday-2" class="anchor" href="#thursday-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over CL 1 and CL 2</li>
+<li>Worksheet and lab on obtaining data</li>
+</ul>
+
+<h2>
+<a id="week-4" class="anchor" href="#week-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 4</h2>
+
+<h3>
+<a id="tuesday-3" class="anchor" href="#tuesday-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Creating Reusable Command-Line Tools (CL 4)</li>
+</ul>
+
+<h3>
+<a id="thursday-3" class="anchor" href="#thursday-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over CL 3</li>
+<li>Worksheet and lab on creating reusuable CL tools</li>
+</ul>
+
+<h2>
+<a id="week-5" class="anchor" href="#week-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 5</h2>
+
+<h3>
+<a id="tuesday-4" class="anchor" href="#tuesday-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Scrubbing Data (CL 5)</li>
+</ul>
+
+<h3>
+<a id="thursday-4" class="anchor" href="#thursday-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over CL 4</li>
+<li>Worksheet and lab on scrubbing data</li>
+</ul>
+
+<h2>
+<a id="week-6" class="anchor" href="#week-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 6</h2>
+
+<h3>
+<a id="tuesday-5" class="anchor" href="#tuesday-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Managing your data workflow (CL 6)</li>
+</ul>
+
+<h3>
+<a id="thursday-5" class="anchor" href="#thursday-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over CL 5</li>
+<li>Worksheet and lab on managing data workflow</li>
+</ul>
+
+<h2>
+<a id="week-7" class="anchor" href="#week-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 7</h2>
+
+<h3>
+<a id="tuesday-6" class="anchor" href="#tuesday-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Exploring Data (CL 7)</li>
+</ul>
+
+<h3>
+<a id="thursday-6" class="anchor" href="#thursday-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over CL 6</li>
+<li>Lab and Worksheet on Exploring Data</li>
+</ul>
+
+<h2>
+<a id="week-8" class="anchor" href="#week-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 8</h2>
+
+<h3>
+<a id="tuesday-7" class="anchor" href="#tuesday-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Parallel Pipelines (CL 8)</li>
+</ul>
+
+<h3>
+<a id="thursday-7" class="anchor" href="#thursday-7" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over Exploring Data (CL 7)</li>
+<li>Lab and Worksheet on Parallel Pipelines</li>
+</ul>
+
+<h2>
+<a id="week-9" class="anchor" href="#week-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 9</h2>
+
+<h3>
+<a id="tuesday-8" class="anchor" href="#tuesday-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<p>We will now transition over to Seven Databases in Seven Weeks, which will be abbreviated SD.</p>
+
+<ul>
+<li>Introduction and Overview (SD 1)</li>
+<li>PostgreSQL (if time)</li>
+</ul>
+
+<h3>
+<a id="thursday-8" class="anchor" href="#thursday-8" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over parallel pipelines</li>
+<li>PostgresSQL (SD 2)</li>
+</ul>
+
+<h2>
+<a id="week-10" class="anchor" href="#week-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 10</h2>
+
+<p>Spring break</p>
+
+<h2>
+<a id="week-11" class="anchor" href="#week-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 11</h2>
+
+<h3>
+<a id="tuesday-9" class="anchor" href="#tuesday-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>PostgresSQL (SD 2)</li>
+</ul>
+
+<h3>
+<a id="thursday-9" class="anchor" href="#thursday-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Worksheet and Lab on PostgresSQL</li>
+</ul>
+
+<h2>
+<a id="week-12" class="anchor" href="#week-12" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 12</h2>
+
+<h3>
+<a id="tuesday-10" class="anchor" href="#tuesday-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Riak (SD 3)</li>
+</ul>
+
+<h3>
+<a id="thursday-10" class="anchor" href="#thursday-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over PostgresSQL (SD 2)</li>
+<li>Worksheet and lab on Riak (SD 3)</li>
+</ul>
+
+<h2>
+<a id="week-13" class="anchor" href="#week-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 13</h2>
+
+<h3>
+<a id="tuesday-11" class="anchor" href="#tuesday-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>HBase (SD 4)</li>
+</ul>
+
+<h3>
+<a id="thursday-11" class="anchor" href="#thursday-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam on Riak (SD 3)</li>
+<li>Worksheet and lab on HBase</li>
+</ul>
+
+<h2>
+<a id="week-14" class="anchor" href="#week-14" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 14</h2>
+
+<h3>
+<a id="tuesday-12" class="anchor" href="#tuesday-12" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>MongoDB (SD 5)</li>
+</ul>
+
+<h3>
+<a id="thursday-12" class="anchor" href="#thursday-12" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over HBase (SD 4)</li>
+<li>Worksheet on MongoDB</li>
+</ul>
+
+<h2>
+<a id="week-15" class="anchor" href="#week-15" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 15</h2>
+
+<h3>
+<a id="tuesday-13" class="anchor" href="#tuesday-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>CouchDB (SD 6)</li>
+</ul>
+
+<h3>
+<a id="thursday-13" class="anchor" href="#thursday-13" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over MongoDB</li>
+<li>Worksheet and lab on CouchDB</li>
+</ul>
+
+<h2>
+<a id="week-16" class="anchor" href="#week-16" aria-hidden="true"><span class="octicon octicon-link"></span></a>Week 16</h2>
+
+<h3>
+<a id="tuesday-14" class="anchor" href="#tuesday-14" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tuesday</h3>
+
+<ul>
+<li>Neo4J (SD 7)</li>
+</ul>
+
+<h3>
+<a id="thursday-14" class="anchor" href="#thursday-14" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thursday</h3>
+
+<ul>
+<li>Exam over CouchDB (SD 6)</li>
+<li>Worksheet and lab on Neo4J</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/Anderson-Lab">Anderson-Lab</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
